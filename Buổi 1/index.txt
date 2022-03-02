@@ -1,0 +1,22 @@
+Lộ trình Khóa học:
+    1. Front end
+        + HTML 
+        + CSS 
+        + Javascript (js) - thuần
+        + JQuery
+        + Bootstrap
+        + Trang web tĩnh (login, bàn bàng, giỏ hàng,...)
+    2. Database (Cơ sở dữ liệu)
+        + MySQL
+    3. Back end
+        + Session
+        + Cookie
+        + Php căn bản 
+        + Liên kết php vs Database
+        + Ứng dụng đọc thêm, sửa, xóa Database sử php 
+        + Laravel framework - xây dựng trang web = Laravel
+            - login, register (login by fb, login by google)
+            - homepage, danh mục, chi tiết, giỏ hàng
+            - admin page (....)
+            - .....
+        + Restfull API

@@ -1,0 +1,82 @@
+@font-face {
+    font-family: myFont;
+    src: url('font-family/TikiTropic.ttf');
+}
+body{
+    padding: 0;
+    margin: 0;
+    padding-bottom: 1000px;
+}
+.common{
+    text-decoration: underline;
+    color: #b8642d;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+.blue{
+    color: blue;
+}
+
+.block-span{
+    background: green;
+}
+
+#span1{
+    color: red;
+}
+
+.block-span span{
+    font-size: 100px;
+}
+.block-span .blue{
+    color: orange;
+}
+
+
+.block{
+    box-shadow: 0 0 12px gray;
+    width: 800px;
+    height: 100px;
+    text-align: center;
+    color: #fff;
+    background: rgb(83,191,82);
+    background: linear-gradient(266deg, rgba(83,191,82,1) 0%, rgba(121,187,76,1) 13%, rgba(242,172,58,1) 38%, rgba(205,16,0,1) 81%, rgba(83,170,187,1) 100%);
+}
+
+
+a{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 50px;
+    font-style: italic;
+    font-family: myFont;
+
+    background: -webkit-linear-gradient(266deg, rgba(83,191,82,1) 0%, rgba(121,187,76,1) 13%, rgba(242,172,58,1) 38%, rgba(205,16,0,1) 81%, rgba(83,170,187,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+.un-block{
+    font-size: 50px;
+    background: -webkit-linear-gradient(266deg, rgba(83,191,82,1) 0%, rgba(121,187,76,1) 13%, rgba(242,172,58,1) 38%, rgba(205,16,0,1) 81%, rgba(83,170,187,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.shadow{
+    text-shadow: 0 0 12px gray;
+}
+
+
+ul{
+    list-style: none;
+}
