@@ -1,0 +1,92 @@
+@font-face {
+    font-family: myFont;
+    src: url('../Buổi\ 2/font-family/TikiTropicBold.ttf');
+}
+.article img, .contact img{
+    box-shadow: 6px 5px 11px #070606;
+}
+body{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 100px;
+    background: rgb(255,79,79);
+    background: linear-gradient(117deg, rgba(255,79,79,1) 0%, rgba(51,212,66,1) 29%, rgba(255,151,225,1) 57%, rgba(118,200,255,1) 100%);
+}
+.title-pages{
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 9px 3px 12px #393737;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.service{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+.service h2, .article h2, .contact h2{
+    font-size: 50px;
+    font-family: cursive;
+    background: -webkit-linear-gradient(32deg, rgb(243, 151, 151) 0%, rgb(243, 234, 139) 29%, rgb(216, 247, 145) 57%, rgb(115, 194, 247) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.service ul{
+    list-style: none;
+    width: 30%;
+    text-align: left;
+    margin: auto;
+}
+.service ul a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: auto;
+    color: rgb(0, 78, 114);
+    font-weight: bold;
+}
+.article{
+    text-align: center;
+}
+.article h4{
+    font-size: 25px;
+    color: white;
+    font-style: italic;
+}
+.content-article{
+    width: 50%;
+    margin: auto;
+    color: rgb(31, 0, 116);
+    font-size: 18px;
+}
+table{
+    margin: auto;
+}
+.service{
+    margin: auto;
+}
+.contact{
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+.contact-item{
+    width: 100%;
+    
+}
+.contact-item-child{
+    width: 50%;
+    display: inline-block;
+}
+.label-gender{
+    color: black !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+}
+.contact label, .contact .label{
+    color: white;
+    font-size: 18px;
+    text-shadow: 0 0 12px gray;
+    font-weight: bold;
+    font-style: italic;
+}

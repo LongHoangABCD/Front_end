@@ -1,0 +1,134 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.block-tow{
+    width: 100px;
+    height: 100px;
+    background: gray;
+    /* margin: 12px 24px 30px 60px;
+    padding: 12px; */
+}
+.block{
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 23px;
+    margin-right: 60px;
+    padding-top: 20px;
+}
+.block-three{
+    width: 100px;
+    height: 100px;
+    background: rgb(241, 7, 7);
+    /* border-style: dashed;
+    border-width: 2px;
+    border-color: blue; */
+    border: 5px solid rgb(28, 207, 133);
+    /* border-radius: 19% 81% 19% 81% / 71% 84% 16% 29% ; */
+    border-radius: 2px;
+}
+.block-four{
+    width: 500px;
+    height: 500px;
+    background-image: 
+        url('https://lovablemessages.com/wp-content/uploads/2021/12/anh-dep-3d-thien-nhien-hai-nang-tien.jpg'),
+        url('https://cdn.tgdd.vn/Files/2019/11/14/1218860/chup-anh-3d-la-gi-cach-chup-anh-3d-bang-dien-thoai-may-anh-don-gian-5.jpg');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: 100px 50px;
+}
+.block-five{
+    width: 500px;
+    height: 500px;
+    background-image: linear-gradient(120deg, rgb(179, 97, 97), red);
+}
+
+.parent{
+    width: 50%;
+    height: 400px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: red;
+    margin-bottom: 50px;
+    position: relative;
+}
+.child{
+    width: 80%;
+    background-color: green;
+    color: white;
+}
+.parent img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+.fixed{
+    width: 100%;
+    height: 20px;
+    background-color: blue;
+    position: fixed;
+    top: 0;
+}
+.fixed ul{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+   
+}
+.fixed ul li{
+    height: 100%;
+    padding: 2px 10px;
+    background-color: rgb(240, 238, 238);
+    box-sizing: border-box;
+    font-size: 14px;
+    border-left: 1px solid rgb(211, 211, 211);
+    border-right: 1px solid rgb(211, 211, 211);
+    cursor: pointer;
+    position: relative;
+
+}
+.fixed ul li:hover{
+    border-bottom: 2px solid rgb(3, 211, 65);
+    color: rgb(97, 247, 97);
+    background-color: rgb(178, 185, 190);
+}
+.fixed ul li .more{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: orange;
+    left: 0;
+    bottom: -50px;
+    display: none;
+}
+.fixed ul li:hover .more{
+    display: block;
+}
+
+/* 
+    px, pt
+    %, em, rem
+*/
+html{
+ 
+}
+.parent-two{
+    width: 50%;
+    height: 200px;
+    background-color: aquamarine;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+.child-two{
+    width: 2em;
+    height: 20px;
+    background-color: rgb(7, 3, 245);
+}

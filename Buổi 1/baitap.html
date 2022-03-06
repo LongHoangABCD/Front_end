@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="baitap.css">
 </head>
 <body>
-    <h1>Xử dụng các thẻ HTML đã học, xây dựng khung giao diện sau</h1>
-    <div>
+    <h1 class="title-pages">
+        Sử dụng các thẻ HTML đã học, xây dựng khung giao diện sau
+    </h1>
+    <div class="service">
         <h2>Dịch vụ</h2>
         <ul>
             <li>
@@ -56,23 +59,25 @@
         </ul>
     </div>
 
-    <div>
+    <div class="article">
         <h2>Bài báo</h2>
         <h4>Nga và U cà đánh nhau, Ai sẽ nhường ai ?</h4>
         <img src="https://ichef.bbci.co.uk/news/1024/branded_vietnamese/154D6/production/_122045278_bef6172c-b878-4f0c-9004-121dc4c05a28.jpg" alt="" width="500">
         <br>
         <img src="https://sohanews.sohacdn.com/thumb_w/660/160588918557773824/2022/1/17/merlin1995727711a5242f4-2ee3-42c3-8a34-c03154469901-superjumbo-16424085023471980346088.jpg" alt="" width="500">
         <br>
-        <span>
-            Tình hình chiến sự Nga-Ukraine đang rất nóng và 
-            khó lường dù hai bên đồng ý đàm phán. Trong bối cảnh này, 
-            Báo Pháp Luật TP.HCM vừa có bài phỏng vấn TS Nikolaus Scholik (Áo) - 
-            chuyên gia về khoa học chính trị, chính trị quốc tế, chính trị an ninh, 
-            Cố vấn cao cấp tại Viện Chính sách An ninh và châu Âu của Áo....
-        </span>
-        <a href="https://plo.vn/quoc-te/chuyen-gia-ban-ve-the-dam-phan-ngaukraine-ai-phai-nhuong-ai-1045815.html">
-            Xem thêm
-        </a>
+        <div class="content-article">
+            <span>
+                Tình hình chiến sự Nga-Ukraine đang rất nóng và 
+                khó lường dù hai bên đồng ý đàm phán. Trong bối cảnh này, 
+                Báo Pháp Luật TP.HCM vừa có bài phỏng vấn TS Nikolaus Scholik (Áo) - 
+                chuyên gia về khoa học chính trị, chính trị quốc tế, chính trị an ninh, 
+                Cố vấn cao cấp tại Viện Chính sách An ninh và châu Âu của Áo....
+            </span>
+            <a href="https://plo.vn/quoc-te/chuyen-gia-ban-ve-the-dam-phan-ngaukraine-ai-phai-nhuong-ai-1045815.html">
+                Xem thêm
+            </a>
+        </div>
 
         <h4>Ca mắc mới COVID-19 tăng vọt lên 94.385 ca</h4>
         <img src="https://bcp.cdnchinhphu.vn/Uploaded/nguyendieuhuong/2021_10_27/covid.jpg" alt="" width="500">
@@ -153,69 +158,107 @@
                 </tr>
             </tbody>
         </table>
-        <span>
-            Ngày 28/2 ghi nhận 94.385 ca mắc COVID-19 tại 61 tỉnh, 
-            thành, trong đó có 66.227 ca trong cộng đồng. 
-            Ngày hôm nay Sở Y tế Quảng Ninh đăng ký bổ sung 28.095 F0.
-            Bản tin phòng chống dịch COVID-19 ngày 28/2 của Bộ Y tế cho biết: Tính từ 16h ngày 27/02 đến 16h ngày 28/02,
-             trên Hệ thống Quốc gia quản lý ca bệnh COVID-19 ghi nhận 94.385...
-        </span>
-        <a href="https://baomoi.com/ca-mac-moi-covid-19-tang-vot-len-94-385-ca/c/41888993.epi">
-            Xem thêm
-        </a>
+        <div class="content-article">
+            <span>
+                Ngày 28/2 ghi nhận 94.385 ca mắc COVID-19 tại 61 tỉnh, 
+                thành, trong đó có 66.227 ca trong cộng đồng. 
+                Ngày hôm nay Sở Y tế Quảng Ninh đăng ký bổ sung 28.095 F0.
+                Bản tin phòng chống dịch COVID-19 ngày 28/2 của Bộ Y tế cho biết: Tính từ 16h ngày 27/02 đến 16h ngày 28/02,
+                trên Hệ thống Quốc gia quản lý ca bệnh COVID-19 ghi nhận 94.385...
+            </span>
+            <a href="https://baomoi.com/ca-mac-moi-covid-19-tang-vot-len-94-385-ca/c/41888993.epi">
+                Xem thêm
+            </a>
+        </div>
     </div>
 
-    <div>
+    <div class="service">
         <h2>Giải trí</h4>
         <video controls="" width="700">
             <source src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_1280_10MG.mp4">
         </video>
     </div>
     
-    <div>
+    <div class="contact">
         <h2>Liên lạc</h2>
-        <div>
-            <label for="email">Email: </label>
-            <input type="email" placeholder="Nhập email" id="email">
+        <div class="contact-item">
+            <div class="contact-item-child">
+                <label for="email">Email: </label>
+            </div>
+            <div class="contact-item-child">
+                <input type="email" placeholder="Nhập email" id="email">
+            </div>
         </div>
-        <div>
-            <label for="pass">Password: </label>
-            <input type="pass" placeholder="Nhập pass" id="pass">
+        <div class="contact-item">
+            <div class="contact-item-child">
+                <label for="pass">Password: </label>
+            </div>
+            <div class="contact-item-child">
+                <input type="pass" placeholder="Nhập pass" id="pass">
+            </div>
         </div>
+        <div class="contact-item">
+            <div class="contact-item-child">
+                <label for="name">Họ tên: </label>
+            </div>
+            <div class="contact-item-child">
+                <input type="text" placeholder="Nhập họ tên" id="name">
+            </div>
+        </div class="contact-item">
         <div>
-            <label for="name">Họ tên: </label>
-            <input type="text" placeholder="Nhập họ tên" id="name">
+            <div class="contact-item-child">
+                <label for="age">Tuổi: </label>
+            </div>
+            <div class="contact-item-child">
+                <input type="number" placeholder="Nhập tuổi" id="age">
+            </div>
         </div>
-        <div>
-            <label for="age">Tuổi: </label>
-            <input type="number" placeholder="Nhập tuổi" id="age">
+        <div class="contact-item">
+            <div class="contact-item-child">
+                <span class="label">Giới tính: </span>
+            </div>
+            <div class="contact-item-child">
+                <input type="radio" id="male" name="gender">
+                <label for="male" class="label-gender">Nam</label>
+                <input type="radio" id="female" name="gender">
+                <label for="female" class="label-gender">Nữ</label>
+                <input type="radio" id="other" name="gender">
+                <label for="other" class="label-gender">Khác</label>
+            </div>
         </div>
-        <div>
-            <span>Giới tính: </span>
-            <input type="radio" id="male" name="gender">
-            <label for="male">Nam</label>
-            <input type="radio" id="female" name="gender">
-            <label for="female">Nữ</label>
-            <input type="radio" id="other" name="gender">
-            <label for="other">Khác</label>
+        <div class="contact-item">
+            <div class="contact-item-child">
+                <label for="birthday">Ngày tháng năm sinh: </label>
+            </div>
+            <div class="contact-item-child">
+                <input type="date" id="birthday">
+            </div>
         </div>
-        <div>
-            <label for="birthday">Ngày tháng năm sinh: </label>
-            <input type="date" id="birthday">
+        <div class="contact-item">
+            <div class="contact-item-child">
+                <span class="label">Mức lương / tháng: </span>
+            </div>
+            <div class="contact-item-child">
+                <span>12k USD</span>
+                <input type="range" min="12000" max="100000" value="50000">
+                <span>100k USD</span>
+            </div>
         </div>
-        <div>
-            <span>Mức lương / tháng: </span>
-            <span>12k USD</span>
-            <input type="range" min="12000" max="100000" value="50000">
-            <span>100k USD</span>
+        <div class="contact-item">
+            <div class="contact-item-child">
+                <label for="color">Màu sắc bạn yêu thích: </label>
+            </div>
+            <div class="contact-item-child">
+                <input type="color" value="#47ed40">
+            </div>
         </div>
-        <div>
-            <label for="color">Màu sắc bạn yêu thích: </label>
-            <input type="color" value="#47ed40">
-        </div>
-        <div>
-            <label for="image">Hình ảnh của bạn: </label>
-            <input type="file">
+        <div class="contact-item">
+            <div class="contact-item-child">
+                <label for="image">Hình ảnh của bạn: </label>
+            </div>
+            <div class="contact-item-child">
+                <input type="file">
+            </div>
         </div>
 
         <button>
