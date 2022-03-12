@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f3f3f3;
+    padding-bottom: 5rem;
+}
+.header{
+    background-color: black;
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+}
+.header ul{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 2rem;
+}
+.header ul a.header-link {
+    display: block;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 0 1rem;
+}
+.header ul a.header-link:hover{
+    background-color: #d6ac03;
+    font-weight: bold;
+    font-size: 16px;
+}
+.blue{
+    color: rgb(43, 43, 224);
+    margin-right: 2px;
+}
+.red{
+    color: rgb(224, 43, 43);
+    margin-right: 2px;
+}
+.orange{
+    color: rgb(207, 126, 21);
+    margin-right: 2px;
+}
+.green{
+    color: rgb(58, 224, 43);
+    margin-right: 2px;
+}
+.header ul li{
+    position: relative;
+}
+.header ul li .more{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 15rem;
+    border-radius: 0 0 2px 2px;
+    padding-bottom: .5rem;
+    display: none;
+    box-shadow: 0 0 12px gray;
+}
+.header ul li .more a{
+    display: block;
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    padding:0 5px;
+    color: #685402;
+}
+.header ul li .more a:hover{
+    background-color: rgb(110, 226, 255);
+    font-weight: 700;
+}
+.header ul li:hover .more{
+    display: block;
+}
+.article{
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+    color: rgb(88, 87, 87);
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 12px gray;
+    border-radius: 3px;
+}
+.article-title{
+    margin: 1.5rem 0;
+    width: 60%;
+    font-family: cursive;
+}
+.article-content{
+    display: flex;
+}
+.content-left{
+    width: 40%;
+    padding: .5rem;
+    text-align: justify;
+}
+.content-left img, .content-left video{
+    width: 100%;
+}
+.content-left h3{
+    margin: 1rem 0;
+}
+.content-left span{
+    color: rgb(156, 156, 156);
+    margin: 1rem 0;
+    display: block;
+}
+.content-right{
+    width: 60%;
+    padding-left: 2.5rem;
+    padding-top: 1rem;
+}
+.content-right-item{
+    display: flex;
+    padding-bottom: 1rem;
+    margin: 1rem 0;
+}
+.border-dashed{
+    border-bottom: 2px dashed rgb(133, 2, 122);
+}
+.item-avatar{
+    width: 8rem;
+    height: 8rem;
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    line-height: 8rem;
+}
+.bg-one{
+    background-color: rgb(255, 87, 227);
+}
+.bg-two{
+    background-color: rgb(245, 176, 49);
+}
+.bg-three{
+    background-color: rgb(16, 248, 16);
+}
+.item-content{
+    padding-left: 2rem;
+    font-family: cursive;
+}
+.item-content h1{
+    margin-bottom: .5rem;
+}
+table th, table td{
+    text-align: center;
+    padding: 0.5rem 0.3rem;
+}
+table span{
+    display: inline !important;
+}
+table img{
+    width: 20px !important;
+}
+.line{
+    background: rgb(231,6,219);
+    background: linear-gradient(332deg, rgba(231,6,219,1) 0%, rgba(212,202,51,1) 29%, rgba(223,255,151,1) 57%, rgba(118,200,255,1) 100%);
+    width: 100%;
+    height: 3px;
+}
+.contact{
+    width: 90%;
+    padding: 1rem;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(100 180 159);
+    margin-top: 3rem;
+}
+.contact .contact-line{
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+}
+.contact .contact-line .block-input{
+    width: 50%;
+    padding: 0 .5rem;
+}
+.block-input input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: .8rem .5rem;
+    border-radius: 3px;
+}
+.contact-item{
+    padding: 0 .4rem;
+}
+.contact textarea{
+    width: 100%;
+    margin-top: 2rem;
+    border: none;
+    outline: none;
+    padding: .8rem .5rem;
+    border-radius: 3px;
+    min-height: 10rem;
+    resize: none;
+}
+.contact-item .btn{
+    margin-top: 1rem;
+    width: 100%;
+    padding: .8rem ;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background-color: #353535;
+    color: white;
+    font-size: 18px;
+}
+
+.loading{
+    position: absolute;
+    background: rgb(40,255,0);
+    background: linear-gradient(50deg, rgba(40,255,0,0.7878501742493873) 0%, rgba(224,103,181,0.7682423311121324) 26%, rgba(181,185,255,0.7738445720084909) 58%, rgba(0,212,255,0.7486344879748774) 100%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading i{
+    color: white;
+    font-size: 50px;
+    animation: rotate linear .5s infinite;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
