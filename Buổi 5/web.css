@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.my-website{
+    width: 1000px;
+    margin: auto;
+}
+.header{
+    background-color: #f8f8f8;
+    height: 33px;
+    padding: 7px 18px;
+    display: flex;
+    justify-content: space-between;
+}
+.header ul{
+    display: flex;
+}
+.header ul li a{
+    display: block;
+    padding: 0 20px;
+    color: #535455;
+    border-right: 1px solid #535455;
+}
+.header ul li:last-child a{
+    border-right: none
+}
+.banner-top{
+    display: flex;
+}
+.banner-top-left{
+    width: 377px;
+    height: 170px;
+}
+.banner-top-left a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.line-brown{
+    width: 100%;
+    height: 6px;
+    background-color: #834400;
+}
+.banner-top-left a img{
+    width: 100%;
+    height: 100%;
+}
+.banner-top-right{
+    width: 623px;
+    height: 176px;
+    background-color:  #ddd9d9;
+}
+.line-orange{
+    width: 100%;
+    height: 6px;
+    background-color: #ff8f16;
+}
+.right-menu-parent{
+    margin: 8px;
+    width: 606px;
+    height: 114px;
+    border-radius: 3px;
+    border: 2px solid #ff8f16;
+
+}
+.right-menu-parent ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.right-menu-parent ul li img{
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.right-menu-search{
+    padding-left: 30px;
+    padding-right: 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right-menu-search .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-menu-search .left svg{
+    color: #834400;
+    font-size: 30px;
+    margin-right: 15px;
+}
+.right-menu-search .left span{
+    color: #834400;
+    font-size: 14px;
+}
+.right-menu-search .right{
+    background-color: #ff8f16;
+    border-radius: 10px;
+    width: 270px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+.right-menu-search .right input{
+    background-color: #ffe9d0;
+    border: 1px solid #b09578;
+    width: 200px;
+    height: 23px;
+}
+.right-menu-search .right button{
+    border: none;
+    width: 36px;
+    height: 25px;
+    background: transparent;
+    cursor: pointer;
+}
+.right-menu-search .right button svg{
+    color: #2516ff;;
+}

@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+ul.test .hover:hover{
+    color: red;
+}
+ul.test .active:active{
+    color: rgb(150, 0, 250);
+}
+ul.test li input:focus{
+    background-color: gray;
+}
+ul.test li:first-child{
+    color: blueviolet;
+    font-size: 30px;
+}
+ul.test li:last-child{
+    color: rgb(226, 43, 43);
+    font-size: 30px;
+}
+ul.test li:nth-child(4){
+    color: rgb(233, 250, 0);
+    font-size: 20px;
+}
+
+.title::first-line{
+    color: yellowgreen;
+}
+.title::first-letter{
+    font-size: 40px;
+}
+.title::before{
+    font: var(--fa-font-solid);
+    content: "\f015";
+    color: orange;
+}
+.title::after{
+    content: '';
+    color: orange;
+    display: block;
+    background-color: rgb(236, 163, 163);
+    width: 20px;
+    height: 20px;
+}
