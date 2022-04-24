@@ -1,0 +1,11 @@
+.block2 .default{
+    font-size: 20px;
+    color: blue;
+    font-weight: bold;
+}
+.block2 .change{
+    font-size: 20px;
+    color: rgb(255, 183, 0);
+    font-weight: bold;
+    font-style: italic;
+}

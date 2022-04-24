@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.title{
+    width: 100%;
+    background-color: red;
+    text-align: center;
+    font-size: 30px;
+    padding: 1rem 0;
+    box-shadow:  0 0 12px gray;
+    color: white;
+}
+.main{
+    margin: 2rem auto;
+    width: 80%;
+    display: flex;
+    height: auto;
+}
+.main .left{
+    padding: .5rem;
+    background-color: gray;
+    width: 25%;
+    height: 100%;
+    height: 700px;
+}
+.main .right{
+    padding: .5rem;
+    background-color: rgb(236, 89, 4);
+    width: 25%;
+    height: 700px;
+}
+.main .mid{
+    padding: .5rem;
+    background-color: rgb(0, 221, 184);
+    width: 50%;
+    height: 700px;
+}
+
+.footer{
+    width: 80%;
+    margin: auto;
+    background-color: rgb(140, 228, 0);
+    height: 4rem;
+}
+
+/* PC  >= 1024px*/ 
+/* @media only screen and (min-width: 1024px){ 
+    .title{
+
+    }
+} */
+
+/* Tablet  > 740px < 1024*/ 
+@media only screen and (min-width: 741px) and (max-width: 1023px){ 
+    .main{
+        width: 95%;
+        flex-wrap: wrap;
+    }
+    .main .left{
+        width: 33.33%;
+    }
+    .main .mid{
+        width: 66.66%;
+    }
+    .main .right{
+        width: 100%;
+        height: 400px;
+    }
+}
+
+/* Mobile  <= 740px */
+@media only screen and (max-width: 740px){ 
+    .main{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .main .left{
+        width: 100%;
+        height: 400px;
+    }
+    .main .mid{
+        width: 100%;
+        height: 400px;
+    }
+    .main .right{
+        width: 100%;
+        height: 400px;
+    }
+}
