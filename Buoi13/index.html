@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bài 6</h1>
+    <div class="block-form">
+        <label for="name">Tên sinh viên</label>
+        <input type="text" placeholder="Tên sinh viên" id="name">
+        <label for="age">Tuổi sinh viên</label>
+        <input type="text" placeholder="Tuổi sinh viên" id="age">
+        <label for="address">Địa chỉ sinh viên</label>
+        <input type="text" placeholder="Địa chỉ sinh viên" id="address">
+        <label for="class">Lớp sinh viên</label>
+        <input type="text" placeholder="Lớp sinh viên" id="class">
+        <input type="button" value="Thêm" id="btn-send">
+    </div>
+
+    <h1>Thông tin sinh viên</h1>
+    <div class="block-data">
+        
+    </div>
+
+
+    <!-- Modal Update -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Sửa dữ liệu</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" value="" class="id-key">
+                <label for="nameUpdate">Tên sinh viên</label>
+                <input type="text" placeholder="Tên sinh viên" id="nameUpdate">
+                <br>
+                <label for="ageUpdate">Tuổi sinh viên</label>
+                <input type="text" placeholder="Tuổi sinh viên" id="ageUpdate">
+                <br>
+                <label for="addressUpdate">Địa chỉ sinh viên</label>
+                <input type="text" placeholder="Địa chỉ sinh viên" id="addressUpdate">
+                <br>
+                <label for="classUpdate">Lớp sinh viên</label>
+                <input type="text" placeholder="Lớp sinh viên" id="classUpdate">
+            </div>
+            <div class="modal-footer">
+                <button data-dismiss="modal" type="button" class="btn btn-primary" id="update-data">Sửa dữ liệu</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal Delete -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Xóa dữ liệu</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" value="" class="id-key-delete">
+                <h1>Mày có muốn xóa không? Hành động không thể hoàn tác!</h1>
+            </div>
+            <div class="modal-footer">
+                <button data-dismiss="modal" type="button" class="btn btn-danger" id="delete-data">Xóa</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Không</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+        $('#exampleModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget) 
+            var recipient = button.data('id') 
+            $("#nameUpdate").val(
+                arrStudent[recipient].name != undefined ? arrStudent[recipient].name : arrStudent[recipient]['full-name']
+            )
+            $("#ageUpdate").val(
+                arrStudent[recipient].age
+            )
+            $("#addressUpdate").val(
+                arrStudent[recipient].address
+            )
+            $("#classUpdate").val(
+                arrStudent[recipient].class
+            )
+            $(".id-key").val(recipient);
+        })
+
+
+
+        $('#deleteModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget) 
+            var recipient = button.data('id') 
+            $(".id-key-delete").val(recipient);
+        })
+    </script>
+</body>
+</html>

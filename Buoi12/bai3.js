@@ -48,3 +48,5 @@ buttonTwo.onclick = function() {
         inputText.value = copy;
     }
 }
+
+// ý 3
